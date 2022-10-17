@@ -9,7 +9,7 @@ function getCategory(){
         success: function (category){
             $("#category").empty();
             for(i= 0; i< category.length; i++){
-                $("#category").append("<option value='"+category[i].id+"'>"+ category[i].id+ " "+ category[i].name+ " "+ category[i].description+ "</option><button onclick='getDetailCategory("+category[i].id+")'>Seleccionar</button><button onclick='deleteCategory("+category[i].id+")'>Borrar</button><br>");
+                $("#category").append("<option &nbsp value='"+category[i].id+"'>"+ category[i].id+ "  "+ category[i].name+ "  "+ category[i].description+ "</option>&nbsp<button class='btn2' onclick='getDetailCategory("+category[i].id+")'>Seleccionar</button>&nbsp&nbsp<button class='btn2' onclick='deleteCategory("+category[i].id+")'>Borrar</button><br>");
             }
         },
         error: function (xhr, status){

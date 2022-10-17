@@ -27,7 +27,5 @@ public class CategoryRepository {
         return categoryCrudRepository.save(c);
     }
     //borra datos
-    public void delete(Category c){
-        categoryCrudRepository.delete(c);
-    }
+    public void delete(Category c){categoryCrudRepository.delete(c);}
 }

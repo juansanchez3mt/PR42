@@ -28,5 +28,6 @@ public class LibraryController {
     @ResponseStatus(HttpStatus.CREATED)
     public Library update(@RequestBody Library c){return libraryService.update(c);}
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") int id){return libraryService.delete(id);}
 }

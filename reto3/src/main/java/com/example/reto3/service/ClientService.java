@@ -55,7 +55,9 @@ public class ClientService {
             return  c;
         }
     }
+
     public boolean delete(int idClient) {
+
         Optional<Client> c= clientRepository.getById(idClient);
         if (c.isPresent()) {
             clientRepository.delete(c.get());

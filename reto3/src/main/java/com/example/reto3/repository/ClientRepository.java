@@ -26,7 +26,6 @@ public class ClientRepository {
         return clientCrudRepository.save(c);
     }
     //borra datos
-    public void delete(Client c){
-        clientCrudRepository.delete(c);
+    public void delete(Client c){clientCrudRepository.delete(c);
     }
 }

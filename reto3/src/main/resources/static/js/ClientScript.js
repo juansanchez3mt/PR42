@@ -9,7 +9,7 @@ function getClients(){
         success: function(clients){
             $("#clients").empty();
             for(i= 0; i< clients.length; i++){
-                $("#clients").append("<option value='"+clients[i].idClient+"'>"+clients[i].idClient+ " "+ clients[i].name+ " "+ clients[i].age+ " "+ clients[i].email+ "</option><button onclick='getDetailClients("+clients[i].idClient+")'>Seleccionar</button><button onclick='deleteClients("+clients[i].idClient+")'>Borrar</button><br>");
+                $("#clients").append("<option value='"+clients[i].idClient+"'>"+clients[i].idClient+ " "+ clients[i].name+ " "+ clients[i].age+ " "+ clients[i].email+ "</option><br><button class='btn2' onclick='getDetailClients("+clients[i].idClient+")'>Seleccionar</button>&nbsp<button class='btn2' onclick='deleteClients("+clients[i].idClient+")'>Borrar</button><br>");
             }
         },
         error: function (xhr, status){
